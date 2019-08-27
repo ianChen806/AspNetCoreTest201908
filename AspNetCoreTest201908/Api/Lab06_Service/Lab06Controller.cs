@@ -19,7 +19,7 @@ namespace AspNetCoreTest201908.Api.Lab06_Service
         public async Task<IActionResult> Index1()
         {
             var result = await _httpService.IsAuthAsync();
-            return Ok(new AuthResult { IsAuth = result });
+            return Ok(new AuthResult {IsAuth = result});
         }
     }
 }

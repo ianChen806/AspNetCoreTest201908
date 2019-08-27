@@ -24,6 +24,12 @@ namespace AspNetCoreTest201908.Api.Lab05_DbContext
             return Ok(await _dbContext.Profile.ToListAsync());
         }
         
+        [HttpGet]
+        public async Task<IActionResult> Index3()
+        {
+            return Ok(await _dbContext.VProfile.ToListAsync());
+        }
+        
         [HttpPost]
         public async Task<IActionResult> Index2([FromBody] ProfileDto profileDto)
         {
